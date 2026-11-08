@@ -1,0 +1,6 @@
+{
+  "name": "Clave Vega: Expedición Bahía Roca",
+  "description": "Propuesta visual interactiva de tres páginas web para la trilogía editorial infantil Clave Vega: Expedición Bahía Roca, con acertijos digitales, diario de investigación y ambientación de exploradores.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

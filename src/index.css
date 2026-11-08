@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --petroleum-dark: #0e1920;
+    --petroleum-base: #142530;
+    --petroleum-light: #1e3646;
+    --gold-antique: #c89b3c;
+    --gold-light: #dfb15b;
+    --gold-dark: #8c6a25;
+    --parchment-bg: #f5eedf;
+    --parchment-card: #ebe2cf;
+    --parchment-border: #d4c5a9;
+    --forest-deep: #16261f;
+    --forest-accent: #264436;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: var(--petroleum-dark);
+    color: #ede6d6;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+/* Antique parchment texture effect */
+.parchment-texture {
+  background-color: #f7f1e3;
+  background-image: 
+    radial-gradient(circle at 15% 20%, rgba(180, 140, 90, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(160, 120, 70, 0.12) 0%, transparent 45%),
+    linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(0,0,0,0.03));
+}
+
+.parchment-dark {
+  background-color: #16242e;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(200, 155, 60, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 90% 85%, rgba(36, 61, 52, 0.15) 0%, transparent 50%),
+    linear-gradient(to bottom, rgba(255,255,255,0.02), rgba(0,0,0,0.15));
+}
+
+/* Antique ornate border style */
+.ornate-border {
+  border: 1px solid rgba(200, 155, 60, 0.35);
+  box-shadow: 0 0 0 1px rgba(14, 25, 32, 0.8), 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ornate-border-parchment {
+  border: 1px solid rgba(160, 130, 80, 0.35);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.6) inset, 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Subtle gear rotate animation */
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 30s linear infinite;
+}
+
+.animate-spin-reverse-slow {
+  animation: spinSlow 24s linear infinite reverse;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1c24;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a4150;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c89b3c;
+}
